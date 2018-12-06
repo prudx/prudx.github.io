@@ -6,7 +6,15 @@ p {
     color: #dfdfdf;
 }
 
+li {
+  color: #0062cc; /* bullet color */
+}
 
+li span {
+  color: #dfdfdf;
+  font-size:1.25rem;
+  font-weight:300;
+}
 
 @font-face {
     font-family: 'propagandaregular';
@@ -17,7 +25,17 @@ p {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'datatrash';
+    src: url('fonts/data_trash-webfont.woff2') format('woff2'),
+        url('fonts/data_trash-webfont.woff') format('woff'),
+        url('fonts/data_trash-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------ CLASS OVERRIDES ------*/
+
 .bulletpoint {
   color: #0062cc;
 }
@@ -75,14 +93,18 @@ p {
 }
 
 .project-item .caption .caption-content h2 {
-  font-family: 'propagandaregular';
+  font-family: 'datatrash';
   font-size: 1rem;
   text-transform: uppercase;
+  padding-left: 0.7rem;
 }
 
 .project-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.2rem;
+  background-color: #0062cc;
+  padding-left: 0.8rem;
+  border-radius: 15px;
 }
   
 @media (min-width: 992px) {
@@ -116,4 +138,10 @@ p {
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
+}
+
+#project-header { 
+  font-family: 'datatrash';
+  font-size: 150%;
+  text-transform: uppercase;
 }
