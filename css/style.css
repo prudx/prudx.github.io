@@ -22,6 +22,12 @@ p {
   color: #0062cc;
 }
 
+.text-overlay {
+  color: black;
+  background-color: aliceblue;
+  padding-left: 0.5rem;
+}
+
 .text-primary {
   padding-top: 1em;
   color: #dfdfdf;
@@ -69,7 +75,8 @@ p {
 }
 
 .project-item .caption .caption-content h2 {
-  font-size: 0.8rem;
+  font-family: 'propagandaregular';
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
@@ -78,35 +85,35 @@ p {
   font-size: 1.2rem;
 }
   
-  @media (min-width: 992px) {
-    .project-item {
-      max-width: none;
-      margin: 0;
-    }
-    .project-item .caption {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
-      -webkit-clip-path: inset(0px);
-      clip-path: inset(0px);
-    }
-    .project-item .caption .caption-content {
-      -webkit-transition: opacity 0.25s;
-      transition: opacity 0.25s;
-      margin-left: 5rem;
-      margin-right: 5rem;
-      margin-bottom: 5rem;
-    }
-    .project-item img {
-      -webkit-transition: -webkit-clip-path 0.25s ease-out;
-      -webkit-clip-path: inset(-1px);
-      clip-path: inset(-1px);
-    }
-    .project-item:hover img {
-      -webkit-clip-path: inset(2rem);
-      clip-path: inset(2rem);
-    }
-    .project-item:hover .caption {
-      background-color: rgba(29, 128, 159, 0.9);
-      -webkit-clip-path: inset(2rem);
-      clip-path: inset(2rem);
-    }
+@media (min-width: 992px) {
+  .project-item {
+    max-width: none;
+    margin: 0;
   }
+  .project-item .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .project-item .caption .caption-content {
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .project-item img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .project-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .project-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
