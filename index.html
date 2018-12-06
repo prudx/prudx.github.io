@@ -10,25 +10,25 @@
     <meta name="author" content="Daniel Maguire">
     <meta name="robots" content="index, follow">
 
-    <title>Daniel Maguire - Curriculum Vitae</title>
+    <title>Daniel Maguire</title>
 
     <!-- Views -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     
-
   </head>
 
   <body>
+
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#">DANIEL MAGUIRE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-responsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home
@@ -113,14 +113,14 @@
 
       <!-- Projects section -->
       <section class="content-section" id="project">
-        <div class="container">
+        <div class="container" id="project-display">
           <div class="content-section-heading text-center">
-            <h2 class="text-primary"><span id="project-header">Recent Projects</span></h2>
+            <h2 class="text-primary"><span id="section-header">Recent Projects</span></h2>
             <br>
           </div>
           <div class="row no-gutters">
             <div class="col-lg-6">
-              <a class="project-item" href="#">
+              <a class="project-item" href="#project-unfinished" data-toggle="modal">
                 <span class="caption">
                   <span class="caption-content">
                     <h2>Grocery scan</h2>
@@ -131,7 +131,7 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a class="project-item" href="#">
+              <a class="project-item" href="#project-finished-computer" data-toggle="modal">
                 <span class="caption">
                   <span class="caption-content">
                     <h2>Retro computer shop</h2>
@@ -142,7 +142,7 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a class="project-item" href="#">
+              <a class="project-item" href="#project-finished-imd" data-toggle="modal">
                 <span class="caption">
                   <span class="caption-content">
                     <h2>Irish Crime Rate</h2>
@@ -154,40 +154,145 @@
               </a>
             </div>
             <div class="col-lg-6">
-              <a class="project-item" href="#">
+              <a class="project-item" href="#project-finished-2d" data-toggle="modal">
                 <span class="caption">
                   <span class="caption-content">
                     <h2>2D Sidescrolling platformer</h2>
                     <p class="mb-0">A unique platforming game coded in python using PyGame</p>
                   </span>
                 </span>
-                <img class="img-fluid" src="images/pyGameCode.PNG" alt="">
+                <img class="img-fluid" src="images/pyGame.jpg" alt="">
               </a>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Parralax Divider bg-parralax -->
+      <!-- Education & Hobbies section -->
+
+      <section class="parralax-divider">
+        <div class="row" id="bg-parralax">
+          <div class="col-lg-6 content-section-heading text-center">
+            <h2 class="text-primary"><span id="section-header">Education</span></h2>
+          </div>
+          <div class="col-lg-6 content-section-heading text-center">
+            <h2 class="text-primary"><span id="section-header">Hobbies</span></h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-1"></div>
+          <div class="col-lg-4 content-section text-left" id="education-content">
+            <h3 class="text-secondary"><span id="education-header">I.T Tallaght (2015-2019)</span></h3>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-4" content-section text-left" id="hobby-content">
+            <h3 class="text-secondary"><span id="hobby-header">Hobbies</span></h3>
+            <br>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+
+      <section class="contact">
+        <div class="row">
+          <div class="col-lg-12 content-section-heading text-center">
+              <h2 class="text-primary"><span id="section-header">Contact Me</span></h2>
+              <br>
+          </div>
+        </div>
+      </section>
+
+
     </div>
 
-    <!-- Contact section -->
+    
 
     <!-- Modal section (not visable)-->
-    <div class="modal fade" id="contact" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4>Contact details</h4>
-          </div>
-          <div class="modal-body">
+      <!-- Contact Modal -->
+        <div class="modal fade" id="contact" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4>Contact details</h4>
+              </div>
+              <div class="modal-body">
 
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">Close</a>
+              </div>
+            </div>
           </div>
-          <div class="modal-footer">
-            <a class="btn btn-default" data-dismiss="modal">Close</a>
+        </div>
+      <!-- Project 'coming soon' Modal -->
+        <div class="modal fade" id="project-unfinished" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                <h4>Coming soon!</h4>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" data-dismiss="modal" >Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- Project 'Redirect to site' Modals -->
+      <div class="modal fade" id="project-finished-imd" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+              <h4>Do you wish to be redirected to the github repository for this project?</h4>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-primary" href="https://github.com/prudx/IrishCrime">Yes</a>
+              <a class="btn btn-outline-secondary" data-dismiss="modal">No</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+        <div class="modal fade" id="project-finished-2d" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                <h4>Do you wish to be redirected to the github repository for this project?</h4>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" href="https://github.com/barrett122/Avocado">Yes</a>
+                <a class="btn btn-outline-secondary" data-dismiss="modal">No</a>
+              </div>
+            </div>
+          </div>
+        </div>
     
+        <div class="modal fade" id="project-finished-computer" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+              </div>
+              <div class="modal-body">
+                <h4>Do you wish to be redirected to the github repository for this project?</h4>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-primary" href="https://github.com/prudx/OnlineStore">Yes</a>
+                <a class="btn btn-outline-secondary" data-dismiss="modal">No</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          
     <!-- Bootstrap core JavaScript  -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
