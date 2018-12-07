@@ -40,6 +40,11 @@ li span {
   color: #0062cc;
 }
 
+.education-experience {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .text-overlay {
   color: black;
   background-color: aliceblue;
