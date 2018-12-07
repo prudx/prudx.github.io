@@ -20,6 +20,17 @@
 
   <body>
 
+<!--
+      <form class="navbar-form navbar-right" role="search">
+          <div class="input-group"> 
+          <input type="text" class="form-control" placeholder="Search">
+          <span class="input-group-btn">
+          <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-search"></span>
+          </button>
+          </span>
+          </div>
+          </form> -->
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark static-top">
@@ -29,6 +40,11 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-responsive">
+            <form class="search" action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+              <input name="q" type="hidden"/>
+              <input name="qfront" type="search" required class="searchField" placeholder="Google Search" maxlength="50"/>
+              <input type="submit" class="search-button" value="🔍" />
+            </form>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Home
@@ -74,7 +90,7 @@
                     <div class="col-lg-3"></div>
                     <div class="container">
                       <div class="row">
-                        <div class="col-lg-2 col-sm-0"></div>
+                        <div class="col-lg-2"></div>
                         <div class="col-lg-4 col-sm-6 col-xs-6">
                             <li class="bulletpoint">
                               <span class="lead">C#</span><p></p>
@@ -437,6 +453,14 @@
     <script src="js/jquery.vide.js"></script>
     <!-- Random scripts -->
     <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Search engine -->
+    <script>
+      var domainroot=""
+      function Gsitesearch(curobj){
+      curobj.q.value=""+domainroot+" "+curobj.qfront.value
+      }
+    </script>
 
   <!--
     Might need below js

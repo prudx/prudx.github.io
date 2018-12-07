@@ -45,6 +45,11 @@ li span {
   margin-right: 1em;
 }
 
+.searchField {
+  max-width: 10em;
+  position: center;
+}
+
 .text-overlay {
   color: black;
   background-color: aliceblue;
