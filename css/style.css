@@ -115,12 +115,18 @@ li span {
   padding-left: 20px;
 }
 
+#search-bar {
+  padding-right: 3em;
+}
+
 .navbar-brand {
   font-family: 'propagandaregular';
   font-size: 150%;
   letter-spacing: 5px;
   text-align: left;
+  padding-left: 3em;
 }
+
 .navbar-dark {
   background-color: #0062cc;
 }
