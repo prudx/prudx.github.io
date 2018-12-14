@@ -275,20 +275,17 @@ li span {
   padding-top: 2em;
 }
 
-#project-item-1 {
-  border-top-left-radius: 25px;
+#year1 {
+  font-weight: 700;
 }
-
-#project-item-2 {
-  border-top-right-radius: 25px:
+#year2 {
+  font-weight: 700;
 }
-
-#project-item-3 {
-
+#year3 {
+  font-weight: 700;
 }
-
-#project-item-4 {
-
+#year4 {
+  font-weight: 700;
 }
 /*#feature-list{
   color: rgb(157, 157, 157);
