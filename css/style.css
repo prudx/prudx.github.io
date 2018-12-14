@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 h1 {
     width: 100%;
     color: #dfdfdf;
@@ -105,15 +110,16 @@ li span {
 }
 
 .nav-item {
-  font-size:1.25rem;
+  font-size:1.25em;
   font-weight:300;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 
 .navbar-brand {
   font-family: 'propagandaregular';
   font-size: 150%;
   letter-spacing: 5px;
+  text-align: left;
 }
 .navbar-dark {
   background-color: #0062cc;
@@ -128,7 +134,9 @@ li span {
   position: relative;
   overflow: hidden;
   max-width: 530px;
-  margin: auto auto 1rem;
+  margin: 1rem;
+  border-radius: 55px;
+  
   }
   
 .project-item .caption {
@@ -150,7 +158,6 @@ li span {
 }
 
 .project-item .caption .caption-content h2 {
-  font-family: 'datatrash';
   font-size: 1rem;
   text-transform: uppercase;
   padding-left: 0.7rem;
@@ -222,6 +229,26 @@ li span {
 
 }
 
+#refrences {
+  margin-top: 2em;
+  margin-bottom: 6em;
+  position: center;
+}
+
+.refrence-section{
+  
+  padding: 0.5em;
+  color: white;
+  background-color: rgb(68, 68, 68);
+  border-radius: 15px;
+}
+
+.refrence-header{
+  color: white;
+  font-family: datatrash;
+  font-size: 1.5em;
+}
+
 #ee-header {
   font-family: sans-serif;
   font-weight: 500;
@@ -231,3 +258,22 @@ li span {
 #email {
   padding-top: 2em;
 }
+
+#project-item-1 {
+  border-top-left-radius: 25px;
+}
+
+#project-item-2 {
+  border-top-right-radius: 25px:
+}
+
+#project-item-3 {
+
+}
+
+#project-item-4 {
+
+}
+/*#feature-list{
+  color: rgb(157, 157, 157);
+}*/
