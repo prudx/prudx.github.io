@@ -65,6 +65,7 @@ li span {
   padding-left: 0.5rem;
 }
 
+
 .text-primary {
   padding-top: 1em;
   color: #dfdfdf;
@@ -72,6 +73,16 @@ li span {
 
 .modal-text {
   color: black;
+}
+
+.modal-header{
+  background-color: #0062cc;
+}
+
+.modal-header-text{
+  color: white;
+  font-family: datatrash;
+  font-size: 0.75em;
 }
 
 .modal-pics {
@@ -89,8 +100,7 @@ li span {
 
 .navbar {
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  width: 100%; /* Full width */
+  width: 100%; 
   top: 0px;
 }
 
@@ -216,4 +226,8 @@ li span {
   font-family: sans-serif;
   font-weight: 500;
   color: #dfdfdf;
+}
+
+#email {
+  padding-top: 2em;
 }

@@ -24,10 +24,46 @@
   <body>
 
     <!-- Navigation -->
-   
+    <nav class="navbar navbar-expand-lg navbar-dark static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">DANIEL MAGUIRE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-responsive">
+
+          <ul class="navbar-nav ml-auto">
+            <!--
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            -->
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" data-toggle="modal">Contact</a>
+            </li>
+          </ul>
+          <form class="search" action="http://www.google.com/search" method="get" onSubmit="searchGoogle(this)">
+            <input name="q" type="hidden"/>
+            <input name="qfront" type="search" required class="search-field" placeholder="Google Search" maxlength="50"/>
+            <input type="submit" class="search-button btn-outline-primary" value="🔍" />
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Content -->
-    <div class="container-fluid" style="margin-top:50px">
+    <div class="container-fluid">
       <section class="hero-component" id="home">
         <div class="row">       
             <div class="col-lg-12" style="width: 100%; height: 700px;"
@@ -43,13 +79,13 @@
                             agile methodologies, teamwork and problem solving.
                           </p>
                         <br>
-                        <h2 class="text-primary">Skill sets and strong suits.</h2>
+                        <h2 class="text-primary d-none d-sm-block">Skill sets and strong suits.</h2>
                     </div>
                     <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"></div>
                     <div class="container">
                       <div class="row">
                         <div class="col-lg-1"></div>
-                        <div class="col-lg-5 col-sm-6 col-xs-6">
+                        <div class="col-lg-5 col-sm-6 d-none d-sm-block">
                             <li class="bulletpoint">
                               <span class="lead">C#</span>
                               <br><br>
@@ -163,18 +199,18 @@
       <!-- Parralax Divider -->
       <!-- Education section -->
 
-      <section class="parralax-divider" id="e-and-e">
+      <section class="parralax-divider" id="education">
         <div class="row" id="bg-parralax">
           <div class="col-lg-1"></div>
-          <div class="col-lg-5 content-section-heading text-center education-experience">
+          <div class="col-lg-10 content-section-heading text-center education-experience">
             <h2 class="text-primary"><span id="section-header">Education</span></h2>
-            <h3 class="text-secondary text-left">
+            <h3 class="text-secondary text-center">
               <span id="ee-header"> BSc (Hons) in Computing with Software Development 
-                <span class="text-primary" id="slash">/</span> Technological University Dublin
+                <br><span class="text-primary" id="slash">/</span> Technological University Dublin
               </span>
             </h3>
             <div class="row">
-              <div class="col-lg-6">        
+              <div class="col-lg-3">        
                 <ul class="lead text-left" style="list-style-type:none">
                   <li><span class="lead"><b>Year 4 Modules</b></span></li>
                   <li><span class="modules">Algorithms & Computation</span></li>
@@ -188,7 +224,7 @@
                   <li><span class="modules">Final Year Project</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6">              
+              <div class="col-lg-3">              
                 <ul class="lead text-left" style="list-style-type:none">
                   <li><span class="lead"><b>Year 3 Modules</b></span></li>
                   <li><span class="modules">Cloud Services & Distributed Comp.</span></li>
@@ -203,14 +239,14 @@
 
                 </ul>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">            
+            
+            
+              <div class="col-lg-3">            
                 <ul class="lead text-left" style="list-style-type:none">
                   <li><span class="lead"><b>Year 2 Modules</b></span></li>
                   <li><span class="modules">Software Development 3 & 4</span></li>
                   <li><span class="modules">Discrete Mathematics 2</span></li>
-                  <li><span class="modules">Software Quality Assurance & Testing</span></li>
+                  <li><span class="modules">Software Quality & Testing</span></li>
                   <li><span class="modules">Network Fundamentals</span></li>
                   <li><span class="modules">Routing & Switching Essentials</span></li>
                   <li><span class="modules">Client-Side Web Development</span></li>
@@ -221,7 +257,7 @@
                   <li><span class="modules">Project</span></li>
                 </ul>
               </div>
-              <div class="col-lg-6">             
+              <div class="col-lg-3">             
                 <ul class="lead text-left" style="list-style-type:none">
                   <li><span class="lead"><b>Year 1 Modules</b></span></li>
                   <li><span class="modules">Software Development 1 & 2</span></li>
@@ -238,28 +274,31 @@
                 </ul>
               </div>
             </div>
+          <div class="col-lg-1"></div>
           </div>
 
       <!-- Experience section -->
-
-          <div class="col-lg-0"></div>
-          <div class="col-lg-5 content-section-heading text-center education-experience">
-            <h2 class="text-primary"><span id="section-header">Experience</span></h2>
-            <h3 class="text-secondary text-left"><span id="ee-header">Application Developer Intern <span class="text-primary" id="slash">/</span> ​Workday </span></h3>
-            <p class="lead text-left">Creating new features and fixing bugs using Workday’s proprietary Java-based language, 
-              Xpresso. Worked as part of a highly efficient Agile/Scrum team to meet deadlines, engaging in multiple 
-              cross-team design sprints. Worked on automation and unit testing. Participated in hackathons and 
-              presented in knowledge-sharing sessions. </p>
-            <h3 class="text-secondary text-left"><span id="ee-header"> Volunteer <span class="text-primary" id="slash">/</span> Coder Dojo, World’s Coolest Projects </span></h3>
-            <p class="lead text-left">Developed a 2D puzzle platformer game in python with coding at the heart of the gameplay,
-               in an attempt to spark an interest in coding for young tech interested kids. The project was exhibited in the RDS 
-               at coder dojo’s “Coolest Projects” event to a very warm reception from all who played.</p>
-            <h3 class="text-secondary text-left"><span id="ee-header">Customer Assistant <span class="text-primary" id="slash">/</span> Dunnes Stores </span></h3>
-            <p class="lead text-left">Provided excellent customer service to customers, stocked shelves, worked in a team, managed 
-              cash, helped with lockup and security checks, ensured quality control of products. </p>
-            <br>
+        
+          <div class="row" id="experience">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 content-section-heading text-center education-experience">
+              <h2 class="text-primary"><span id="section-header">Experience</span></h2>
+              <h3 class="text-secondary text-left"><span id="ee-header">Application Developer Intern <span class="text-primary" id="slash">/</span> ​Workday </span></h3>
+              <p class="lead text-left">Creating new features and fixing bugs using Workday’s proprietary Java-based language, 
+                Xpresso. Worked as part of a highly efficient Agile/Scrum team to meet deadlines, engaging in multiple 
+                cross-team design sprints. Worked on automation and unit testing. Participated in hackathons and 
+                presented in knowledge-sharing sessions. </p>
+              <h3 class="text-secondary text-left"><span id="ee-header"> Volunteer <span class="text-primary" id="slash">/</span> Coder Dojo, World’s Coolest Projects </span></h3>
+              <p class="lead text-left">Developed a 2D puzzle platformer game in python with coding at the heart of the gameplay,
+                in an attempt to spark an interest in coding for young tech interested kids. The project was exhibited in the RDS 
+                at coder dojo’s “Coolest Projects” event to a very warm reception from all who played.</p>
+              <h3 class="text-secondary text-left"><span id="ee-header">Customer Assistant <span class="text-primary" id="slash">/</span> Dunnes Stores </span></h3>
+              <p class="lead text-left">Provided excellent customer service to customers, stocked shelves, worked in a team, managed 
+                cash, helped with lockup and security checks, ensured quality control of products. </p>
+              <br>
+            </div>
+            <div class="col-lg-2"></div>
           </div>
-          <div class="col-lg-1"></div>
         </div>
       </section>
 
@@ -267,15 +306,28 @@
 
       <section class="contact">
         <div class="row">
-          <div class="col-lg-4"></div>
-          <div class="col-lg-4 content-section-heading text-center">
+          <div class="col-lg-12 content-section-heading text-center">
             <h2 class="text-primary">
               <span id="section-header">
                 <a href="#contact" data-toggle="modal">Contact Me</a>
               </span>
             </h2>
           </div>
-          <div class="col-lg-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3">
+            <a href="https://www.linkedin.com/in/prudx/">
+              <img src="images/linkedin1.png" class="modal-pics" alt="">
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <img src="images/mail-s.png" class="modal-pics position-right" alt="" id="email">
+            <p class="text-center" style="color: black;">dnl.maguire@gmail.com</p>
+          </div>
+          <div class="col-lg-3">
+          </div>
         </div>
       </section>
 
@@ -287,24 +339,43 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4>Contact details</h4>
+                <h3 class="text-secondary text-left">
+                  <span class="modal-header-text">Contact me</span>
+                </h3>
               </div>
-              <div class="modal-body">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <a href="https://www.linkedin.com/in/prudx/">
-                      <img src="images/linkedin1.png" class="modal-pics" alt="">
-                    </a>
+              <div class="modal-body">   
+                <div class="well well-sm">
+                <form class="form-horizontal" action="" method="post">
+                <fieldset>          
+                  <!-- Name input-->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Your Name</label>
+                    <div class="col-md-9">
+                      <input id="name" name="name" type="text"  class="form-control">
+                    </div>
                   </div>
-                  <div class="col-sm-6">
-                    <br>
-                    <img src="images/mail-s.png" class="modal-pics position-right" alt="">
-                    <p class="modal-text text-center">dnl.maguire@gmail.com</p>
+          
+                  <!-- Email input-->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                    <div class="col-md-9">
+                      <input id="email" name="email" type="text" class="form-control">
+                    </div>
                   </div>
-                </div>
+          
+                  <!-- Message body -->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="message">Message</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                    </div>
+                  </div>                  
+                </fieldset>
+                </form>
+              </div>
               </div>
               <div class="modal-footer">
-                <a class="btn btn-primary" data-dismiss="modal">Close</a>
+                <a class="btn btn-primary" data-dismiss="modal">Submit</a>
               </div>
             </div>
           </div>
@@ -330,7 +401,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <h3 class="text-secondary text-left">
-                <span class="lead">Irish Crime visualisation
+                <span class="modal-header-text">Irish Crime visualisation
                   <span class="text-primary" id="slash">/
                   </span> ​​College Project
                 </span>
@@ -359,7 +430,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h3 class="text-secondary text-left">
-                  <span class="lead">2D Coding Puzzle Platformer Game
+                  <span class="modal-header-text">2D Coding Puzzle Platformer Game
                     <span class="text-primary" id="slash">/
                     </span> ​​Coder Dojo Exhibition
                   </span>
@@ -387,7 +458,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h3 class="text-secondary text-left">
-                  <span class="lead">Vintage Electronics
+                  <span class="modal-header-text">Vintage Electronics
                     <span class="text-primary" id="slash">/
                     </span> ​College Project
                   </span>
@@ -396,9 +467,7 @@
               <div class="modal-body">
                 <p class="modal-text">I created an online web application similar to a Newegg it specialized 
                   in selling vintage electronics. We built the application using play which is a framework for 
-                  highly scalable web apps coded in Java, Scala and HTML. We used Agile/Scrum to develop our 
-                  project as it was the kind of development process that suited us as students since we had so 
-                  many things going on at once throughout the semester. Our sprints were 2 weeks in length. I 
+                  highly scalable web apps coded in Java, Scala and HTML. I 
                   took the role of scrum master, organising my team and scheduling development sessions and weekly 
                   recaps of our work. Overall the Project went well and it can be viewed on my github found below
                 </p>
@@ -412,43 +481,7 @@
           </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-dark static-top">
-          <div class="container">
-            <a class="navbar-brand" href="#home">DANIEL MAGUIRE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-responsive">
-    
-              <ul class="navbar-nav ml-auto">
-                <!--
-                <li class="nav-item active">
-                  <a class="nav-link" href="#home">Home
-                    <span class="sr-only">(current)</span>
-                  </a>
-                </li>
-                -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#project">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#e-and-e">Education</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#e-and-e">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact" data-toggle="modal">Contact</a>
-                </li>
-              </ul>
-              <form class="search" action="http://www.google.com/search" method="get" onSubmit="searchGoogle(this)">
-                <input name="q" type="hidden"/>
-                <input name="qfront" type="search" required class="search-field" placeholder="Google Search" maxlength="50"/>
-                <input type="submit" class="search-button btn-outline-primary" value="🔍" />
-              </form>
-            </div>
-          </div>
-        </nav>
+        
     <!-- I think it looks better without a footer -->
     <footer>
       <p class="text-primary text-center"></p> 
