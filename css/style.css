@@ -213,6 +213,15 @@ li span {
   max-height: 100%;
 }
 
+#bg-parralax2 {
+  background-image: url(../images/bg-black-white.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-height: 100%;
+}
+
 #section-header { 
   font-family: 'datatrash';
   font-size: 150%;
