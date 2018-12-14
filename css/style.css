@@ -45,9 +45,18 @@ li span {
   margin-right: 1em;
 }
 
-.searchField {
+.search {
+  padding-left: 2em;
+}
+
+.search-field {
   max-width: 10em;
   position: center;
+  border-radius: 6px
+}
+
+.search-button {
+  border-radius: 6px;
 }
 
 .text-overlay {
@@ -77,6 +86,14 @@ li span {
   font-weight: 300;
 }
 
+
+.navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  width: 100%; /* Full width */
+  top: 0px;
+}
+
 .nav-item {
   font-size:1.25rem;
   font-weight:300;
@@ -86,7 +103,7 @@ li span {
 .navbar-brand {
   font-family: 'propagandaregular';
   font-size: 150%;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
 }
 .navbar-dark {
   background-color: #0062cc;
